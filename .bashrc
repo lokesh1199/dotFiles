@@ -74,9 +74,9 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-alias l='ls'
-alias ll='ls -l'
-alias la='ls -al'
+alias l='ls --color=auto'
+alias ll='ls -lh --color=auto'
+alias la='ls -alh --color=auto'
 
 # Adding flags
 alias df='df -h'                          # human-readable sizes
