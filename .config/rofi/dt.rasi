@@ -1,0 +1,105 @@
+/**
+ * ROFI Color theme
+ * NAME: dt-center.rasi
+ * DESCRIPTION: This is a centered prompt.
+ * AUTHOR: Derek Taylor (DT)
+ */
+
+* {
+    background-color:            #2E3440;
+    border-color:                #4F76C7;
+    text-color:                  #bbc2cf;
+    font:                        "Mononoki 12";
+    prompt-font:                 "SourceCodePro 9";
+    prompt-background:           #51afef;
+    prompt-foreground:           #282c34;
+    prompt-padding:              4px;
+    selected-normal-background:  #74438F;
+    selected-normal-foreground:  #ffffff;
+    spacing:                     3;
+}
+#window {
+    border:  1;
+    padding: 5;
+}
+#mainbox {
+    border:  0;
+    padding: 0;
+}
+#message {
+    border:       1px dash 0px 0px ;
+    padding:      1px ;
+}
+#listview {
+    fixed-height: 0;
+    border:       2px dash 0px 0px ;
+    spacing:      5px ;
+    scrollbar:    true;
+    padding:      2px 0px 0px ;
+}
+#element {
+    border:  0;
+    padding: 1px ;
+}
+#element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+#scrollbar {
+    width:        0px ;
+    border:       0;
+    handle-width: 0px ;
+    padding:      0;
+}
+#sidebar {
+    border: 2px dash 0px 0px ;
+}
+#button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+#inputbar {
+    spacing:    0;
+    padding:    1px ;
+}
+#case-indicator {
+    spacing:    0;
+}
+#entry {
+    padding: 4px 4px;
+    expand: false;
+    width: 10em;
+}
+
+#prompt {
+    padding:          @prompt-padding;
+    background-color: @prompt-background;
+    text-color:       @prompt-foreground;
+    font:             @prompt-font;
+    border-radius:    2px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+inputbar {
+    children:   [ textbox-prompt-colon,entry,case-indicator ];
+}
+
+textbox-prompt-colon {
+    expand:     false;
+    str:        "> ";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @normal-foreground;
+}
+
+/* Not actually relevant for this configuration, but it might
+be useful to someone having issues with their icons' background color
+
+element-icon {
+    background-color: inherit;
+}
+*/
