@@ -105,26 +105,19 @@ for functionKey in functionKeys:
     keys.append(Key([], functionKey, lazy.spawn(functionKeys[functionKey])))
 
 
-groupName = {
-    'MAIN': '1',
-    "BROWSE": '2',
-    "MUSIC": '3',
-}
-groups = [Group(i) for i in ["MAIN", "BROWSE", 'MUSIC']]
+groups = ["MAIN", "BROWSE", 'NOTES', 'MUSIC',]
+groups = [Group(i) for i in groups]
 
-for i in groups:
+for index, group in enumerate(groups):
     keys.extend([
-        # mod1 + letter of group = switch to group
-        Key([mod], groupName[i.name], lazy.group[i.name].toscreen(),
-            desc="Switch to group {}".format(i.name)),
+        # mod + number -> switch to that group
+        Key([mod], str(index+1), lazy.group[group.name].toscreen(),
+            desc="Switch to group {}".format(group.name)),
 
-        # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"], groupName[i.name], lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
-        # Or, use below if you prefer not to switch to that group.
-        # # mod1 + shift + letter of group = move focused window to group
-        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-        #     desc="move focused window to group {}".format(i.name)),
+        # mod + shift + number -> send focussed window and switch to that group
+        # If you don't want to switch to that group change switch_group to False
+        Key([mod, "shift"], str(index+1), lazy.window.togroup(group.name, switch_group=True),
+            desc="Switch to & move focused window to group {}".format(group.name)),
     ])
 
 layout_theme = {
