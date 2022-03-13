@@ -87,10 +87,10 @@ keys = [
 ]
 
 functionKeys = {
-    'XF86AudioMute': 'amixer -q -D pulse sset Master toggle',
-    'XF86AudioLowerVolume': 'amixer -q -D pulse sset Master 1%- unmute',
-    'XF86AudioRaiseVolume': 'amixer -q -D pulse sset Master 1%+ unmute',
-    'XF86AudioMicMute': 'amixer -q -D pulse sset Capture toggle',
+    'XF86AudioMute': 'amixer -q -D pipewire sset Master toggle',
+    'XF86AudioLowerVolume': 'amixer -q -D pipewire sset Master 1%- unmute',
+    'XF86AudioRaiseVolume': 'amixer -q -D pipewire sset Master 1%+ unmute',
+    'XF86AudioMicMute': 'amixer -q -D pipewire sset Capture toggle',
     'XF86MonBrightnessUp': 'xbacklight -inc 1',
     'XF86MonBrightnessDown': 'xbacklight -dec 1',
     'XF86Calculator': f'{myTerm} -e "python"',
@@ -175,7 +175,7 @@ def space():
 screens = [
     Screen(
         #wallpaper='~/.config/qtile/wall.jpg',
-        wallpaper='~/Downloads/demon3.jpg',
+        wallpaper='~/Downloads/Images/10.png',
         wallpaper_mode='fill',
         top=bar.Bar(
             [
