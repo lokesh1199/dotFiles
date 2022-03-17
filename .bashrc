@@ -82,6 +82,11 @@ alias la='ls -alh --color=auto'
 alias df='df -h'                          # human-readable sizes
 alias free='free -h'                      # human-readable sizes
 
+# Git
+alias st='git status'
+alias ct='git commit -m'
+alias lg='git log --oneline --decorate --graph --all'
+
 # Functions
 # Backup
 backup() {
