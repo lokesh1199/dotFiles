@@ -39,6 +39,7 @@ shopt -s autocd
 # Flutter
 export PATH=$PATH:~/AndroidDev/flutter/bin
 export PATH=$PATH:~/AndroidDev/cmdline-tools/latest/bin
+export PATH=$PATH:~/AndroidDev/platform-tools
 export CHROME_EXECUTABLE='/usr/bin/brave'
 
 # Miscellaneous
