@@ -86,6 +86,8 @@ keys = [
         desc="Spawn a command using a prompt widget"),
     Key([mod], "e", lazy.spawn('rofi -show emoji -modi emoji -theme dt -font "SourceCodePro 12" -show-icons'),
         desc='Spawn a rofi emoji selector'),
+    #Key([mod], "w", lazy.spawn('rofi -show drun -theme dt -font "SourceCodePro 12" -run-shell-command \'{terminal} -e zsh -ic "{cmd} && read"\''),
+    #    desc='Spawn a rofi emoji selector'),
 ]
 
 functionKeys = {
