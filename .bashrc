@@ -67,7 +67,7 @@ alias fgrep='fgrep --color=auto'
 # Confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
-alias rm='rm -i'
+alias rm='rmv'
 
 # Navigation
 alias ..='cd ..'
@@ -123,6 +123,12 @@ pyzen() {
     index=$(($RANDOM%$length))
     clear
     echo ${zen_strings[$index]} | cowsay -f small
+}
+
+# Moving to Trash instead of deleting
+rmv() {
+    mv $@ ~/.local/share/Trash/files/
+
 }
 
 # Startup
