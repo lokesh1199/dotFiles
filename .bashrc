@@ -127,7 +127,7 @@ pyzen() {
 
 # Moving to Trash instead of deleting
 rmv() {
-    mv $@ ~/.local/share/Trash/files/
+    mv $@ /home/n0n4m399/.local/share/Trash/files/
 
 }
 
