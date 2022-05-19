@@ -3,4 +3,4 @@
 nm-applet &
 light-locker &
 picom &
-flameshot &
+lxsession &
