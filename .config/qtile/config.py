@@ -150,7 +150,7 @@ layouts = [
 
 # colors
 colors = [
-    "#2e3440", "#3b4252", "#434c5e", "#4c566a",
+    "#202020", "#3b4252", "#434c5e", "#4c566a",
     "#8fbcbb", "#88c0d0", "#81a1c1", "#5e81ac",
     "#bf616a", "#d08770", "#ebcb8b", "#a3be8c",
     "#b48ead", "#E288DC"
@@ -172,7 +172,7 @@ def space():
 screens = [
     Screen(
         #wallpaper='~/.config/qtile/wall.jpg',
-        wallpaper='~/Downloads/Images/10.png',
+        wallpaper='~/Downloads/Images/dh.png',
         wallpaper_mode='fill',
         top=bar.Bar(
             [
