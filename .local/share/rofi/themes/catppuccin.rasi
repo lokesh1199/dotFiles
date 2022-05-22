@@ -1,0 +1,12 @@
+* {
+    bg-col:  #202020;
+    bg-col-light: #202020;
+    border-col: #202020;
+    selected-col: #202020;
+    blue: #7aa2f7;
+    fg-col: #D9E0EE;
+    fg-col2: #F28FAD;
+    grey: #D9E0EE;
+    width: 600;
+}
+
