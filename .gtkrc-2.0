@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/n0n4m399/.gtkrc-2.0.mine"
-gtk-theme-name="Nordic"
+gtk-theme-name="Dracula"
 gtk-icon-theme-name="Arc"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Adwaita"

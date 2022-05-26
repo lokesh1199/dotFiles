@@ -307,7 +307,7 @@ schemes:
 
 
 # Choose ONE color scheme from those available in the above list.
-colors: *nord
+colors: *dracula
 
 # Visual Bell
 #
