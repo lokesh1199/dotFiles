@@ -47,7 +47,10 @@ export EDITOR='vim'
 alias nap='shutdown now'
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"    # for ssh agent
 alias vi='vim'
-alias yta="youtube-dl --extract-audio --audio-format best "
+alias yta="yt-dlp --extract-audio --audio-format best "
+alias ytv="yt-dlp -f bestvideo+bestaudio "
+
+
 
 # Scripts
 export PATH=~/opt/bin:$PATH
