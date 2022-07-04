@@ -91,10 +91,10 @@ keys = [
 ]
 
 functionKeys = {
-    'XF86AudioMute': 'amixer -q -D pipewire sset Master toggle',
-    'XF86AudioLowerVolume': 'amixer -q -D pipewire sset Master 1%- unmute',
-    'XF86AudioRaiseVolume': 'amixer -q -D pipewire sset Master 1%+ unmute',
-    'XF86AudioMicMute': 'amixer -q -D pipewire sset Capture toggle',
+    'XF86AudioMute': 'pactl set-sink-mute @DEFAULT_SINK@ toggle',
+    'XF86AudioLowerVolume': 'pactl set-sink-volume @DEFAULT_SINK@ -1%',
+    'XF86AudioRaiseVolume': 'pactl set-sink-volume @DEFAULT_SINK@ +1%',
+    'XF86AudioMicMute': 'pactl set-source-mute @DEFAULT_SOURCE@ toggle',
     'XF86MonBrightnessUp': 'xbacklight -inc 1',
     'XF86MonBrightnessDown': 'xbacklight -dec 1',
     'XF86Calculator': f'{myTerm} -e "python"',
@@ -171,8 +171,7 @@ def space():
 
 screens = [
     Screen(
-        #wallpaper='~/.config/qtile/wall.jpg',
-        wallpaper='~/Downloads/Images/arch.png',
+        wallpaper='~/.config/qtile/wall.jpg',
         wallpaper_mode='fill',
         top=bar.Bar(
             [
@@ -234,10 +233,11 @@ screens = [
                     background=colors[10],
                     fontsize=20,
                 ),
-                widget.Volume(
+                widget.PulseVolume(
                     padding=12,
                     background=colors[10],
                     foreground=colors[0],
+                    limit_max_volume=True,
                 ),
                 widget.TextBox(
                     text='',
