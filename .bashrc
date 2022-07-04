@@ -56,11 +56,11 @@ alias ytv="yt-dlp -f bestvideo+bestaudio "
 export PATH=~/opt/bin:$PATH
 
 # Aliases for python virtual env
-alias py="~/env/bin/python3"
-alias py-pip="~/env/bin/pip"
+alias py="~/venv/bin/python3"
+alias py-pip="~/venv/bin/pip"
 
 # Dotfiles bare repo
-alias dotconfig='/usr/bin/git --git-dir=$HOME/Projects/Public/dotfiles --work-tree=$HOME'
+alias dotconfig='/usr/bin/git --git-dir=$HOME/home/Projects/Public/dotfiles --work-tree=$HOME'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
