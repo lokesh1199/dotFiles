@@ -92,6 +92,11 @@ alias st='git status'
 alias ct='git commit -m'
 alias lg='git log --oneline --decorate --graph --all'
 
+# Bash completion
+source /usr/share/bash-completion/completions/git
+__git_complete dotconfig __git_main
+
+
 # Functions
 # Backup
 backup() {
