@@ -109,7 +109,7 @@ for functionKey in functionKeys:
     keys.append(Key([], functionKey, lazy.spawn(functionKeys[functionKey])))
 
 
-groups = ["MAIN", "BROWSE", 'NOTES', 'MUSIC',]
+groups = ["MAIN", "BROWSE", 'NOTES', 'MUSIC', ]
 groups = [Group(i) for i in groups]
 
 for index, group in enumerate(groups):
@@ -125,14 +125,12 @@ for index, group in enumerate(groups):
     ])
 
 layout_theme = {
-    "border_width": 2,
-    "margin": 2,
     "border_focus": "e1acff",
     "border_normal": "1D2330"
 }
 
 layouts = [
-    layout.Columns(**layout_theme),
+    layout.Columns(**layout_theme, margin=2, border_width=2),
     layout.Max(**layout_theme),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
