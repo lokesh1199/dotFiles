@@ -155,7 +155,7 @@ colors = [
 ]
 
 widget_defaults = dict(
-    font='Mononoki',
+    font='mononoki Nerd Font',
     fontsize=13.5,
     padding=3,
     foreground=colors[0],
@@ -196,7 +196,7 @@ screens = [
                     text='',
                     background=colors[0],
                     foreground=colors[5],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58,
                 ),
                 widget.Systray(
@@ -208,7 +208,7 @@ screens = [
                     text='',
                     background=colors[5],
                     foreground=colors[11],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58,
                 ),
                 widget.Backlight(
@@ -223,7 +223,7 @@ screens = [
                     text='',
                     background=colors[11],
                     foreground=colors[10],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58,
                 ),
                 widget.TextBox(
@@ -241,7 +241,7 @@ screens = [
                     text='',
                     background=colors[10],
                     foreground=colors[9],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58,
                 ),
                 widget.Net(
@@ -255,7 +255,7 @@ screens = [
                     text='',
                     background=colors[9],
                     foreground=colors[8],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58
                 ),
                 widget.Clock(
@@ -267,7 +267,7 @@ screens = [
                     text='',
                     background=colors[8],
                     foreground=colors[12],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58
                 ),
                 widget.CurrentLayout(
@@ -278,7 +278,7 @@ screens = [
                     text='',
                     background=colors[12],
                     foreground=colors[13],
-                    padding=-11,
+                    padding=-7.2,
                     fontsize=58
                 ),
                 widget.Battery(
