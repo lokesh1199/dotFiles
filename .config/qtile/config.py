@@ -155,9 +155,9 @@ colors = [
 ]
 
 widget_defaults = dict(
-    font='mononoki Nerd Font',
-    fontsize=13.5,
-    padding=3,
+    #font='UbuntuMono Nerd Font',
+    fontsize=14.5,
+    padding=0,
     foreground=colors[0],
 )
 extension_defaults = widget_defaults.copy()
@@ -173,7 +173,7 @@ screens = [
         wallpaper_mode='fill',
         top=bar.Bar(
             [
-                widget.TextBox(" ", foreground=colors[5], fontsize=25),
+                widget.TextBox("", foreground=colors[5], fontsize=25, padding=7.2),
                 space(),
                 widget.GroupBox(
                     background=colors[0],
@@ -194,6 +194,7 @@ screens = [
                 ),
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[0],
                     foreground=colors[5],
                     padding=-7.2,
@@ -206,6 +207,7 @@ screens = [
 
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[5],
                     foreground=colors[11],
                     padding=-7.2,
@@ -221,6 +223,7 @@ screens = [
 
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[11],
                     foreground=colors[10],
                     padding=-7.2,
@@ -228,6 +231,7 @@ screens = [
                 ),
                 widget.TextBox(
                     " ",
+                    font='mononoki Nerd Font',
                     background=colors[10],
                     fontsize=20,
                 ),
@@ -239,6 +243,7 @@ screens = [
                 ),
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[10],
                     foreground=colors[9],
                     padding=-7.2,
@@ -253,6 +258,7 @@ screens = [
                 ),
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[9],
                     foreground=colors[8],
                     padding=-7.2,
@@ -265,6 +271,7 @@ screens = [
                 ),
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[8],
                     foreground=colors[12],
                     padding=-7.2,
@@ -276,12 +283,15 @@ screens = [
                 ),
                 widget.TextBox(
                     text='',
+                    font='mononoki Nerd Font',
                     background=colors[12],
                     foreground=colors[13],
                     padding=-7.2,
                     fontsize=58
                 ),
                 widget.Battery(
+                    padding=4,
+                    font='mononoki Nerd Font',
                     charge_char=' ',
                     discharge_char=' ',
                     empty_char=' ',
